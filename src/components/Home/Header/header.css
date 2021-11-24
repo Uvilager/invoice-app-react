@@ -1,0 +1,143 @@
+.header {
+  margin-top: 72px;
+  color: #fff;
+  margin-bottom: 65px;
+}
+
+@media (max-width: 700px) {
+  .header {
+    max-width: 330px;
+  }
+}
+
+.header .right {
+  margin-left: auto;
+}
+
+@media (max-width: 900px) {
+  .header .right {
+    margin-left: auto;
+  }
+}
+
+.header .left h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 700px) {
+  .header .left h1 {
+    font-size: 20px;
+  }
+}
+
+.header .left span {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 500;
+  letter-spacing: -0.25px;
+  color: #dfe3fa;
+}
+
+.header .right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .right .button,
+.header .right .filter {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .right .button span,
+.header .right .filter span {
+  font-size: 12px;
+}
+
+.header .right .filter {
+  position: relative;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .header .right .filter {
+    margin-right: 18px;
+    margin-left: 4px;
+  }
+}
+
+.header .right .filter img {
+  margin-left: 12px;
+  width: 9px;
+  height: 5px;
+}
+
+.header .right .filter .filter-menu {
+  width: 120px;
+  position: absolute;
+  top: 25px;
+  list-style: none;
+  background-color: #1e2139;
+  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.header .right .filter .filter-menu li {
+  cursor: pointer;
+  font-size: 12px;
+  padding: 10px 20px;
+}
+
+.header .right .filter .filter-menu li:hover {
+  color: #1e2139;
+  background-color: #fff;
+}
+
+.header .right .new-invoice {
+  cursor: pointer;
+  height: 48px;
+  width: 150px;
+  background-color: #7c5dfa;
+  border-radius: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .right .new-invoice .plus-circle {
+  margin-right: 8px;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+}
+
+.header .right .new-invoice .plus-circle img {
+  width: 10px;
+  height: 10px;
+}
+
+.header .right .new-invoice p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+}
+/*# sourceMappingURL=header.css.map */
