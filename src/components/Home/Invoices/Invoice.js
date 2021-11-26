@@ -3,19 +3,9 @@ import { Link } from "react-router-dom";
 
 import "./invoice.css";
 import iconRight from "../../../assets/icon-arrow-right.svg";
+import DateFormat from "../../Utilities/DateFormat";
 
 function Invoice({ id, paymentDue, clientName, total, status }) {
-    const options = { day: "2-digit", month: "short", year: "numeric" };
-
-    function DateFormat(date) {
-        const data = new Date(date);
-        return new Date(
-            `${data.getUTCFullYear()}/${
-                data.getUTCMonth() + 1
-            }/${data.getUTCDate()}`,
-        ).toLocaleString("en-IE", options);
-    }
-
     return (
         <div>
             <Link className="invoice flex" to={`/Invoice/${id}`} key={id}>

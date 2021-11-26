@@ -5,6 +5,8 @@ import "./invoiceHeader.css";
 import { ReactComponent as ArrowLeft } from "../../../assets/icon-arrow-left.svg";
 
 function Header({ status, id, setModalOpen, setInvoiceEdit }) {
+    function handleMarkAsPaid() {}
+
     return (
         <div className="wrapper">
             <Link to="/" className="hover">
@@ -36,7 +38,9 @@ function Header({ status, id, setModalOpen, setInvoiceEdit }) {
                     >
                         Delete
                     </button>
-                    <button className="mark">Mark as Paid</button>
+                    <button className="mark" onClick={handleMarkAsPaid()}>
+                        Mark as Paid
+                    </button>
                 </div>
             </div>
         </div>

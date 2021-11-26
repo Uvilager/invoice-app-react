@@ -1,37 +1,6 @@
 .invoiceHolder {
-    position: fixed;
-    top: 0;
-    left: 90px;
-    width: 100vw;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    @media (max-width: 900px) {
-        position: absolute;
-        left: 0;
-    }
     .invoice-wrapper {
-        padding: 56px;
-        background-color: #141625;
-        border-radius: 0px 20px 20px 0px;
-        overflow-y: auto;
-        &::-webkit-scrollbar {
-            width: 8px;
-        }
-        &::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        &::-webkit-scrollbar-thumb {
-            background: #252945;
-            border-radius: 4px;
-        }
-        .createOrEdit {
-            font-size: 24px;
-            line-height: 32px;
-            letter-spacing: -0.5px;
-            font-weight: bold;
-            color: #ffffff;
-        }
-        .button-wrapper {
+        .button-invoice-wrapper {
             justify-content: flex-end;
             button {
                 margin-top: 39px;
@@ -71,36 +40,6 @@
                 letter-spacing: -0.25px;
                 font-weight: 700;
                 padding: 14px;
-            }
-            p {
-                font-weight: 700;
-                margin-top: 48px;
-                color: #7c5dfa;
-                font-size: 12px;
-                line-height: 15px;
-                letter-spacing: -0.25px;
-            }
-            label {
-                margin-top: 24px;
-                margin-bottom: 10px;
-                color: #dfe3fa;
-                font-size: 12px;
-                line-height: 15px;
-                letter-spacing: -0.25px;
-                font-weight: 500;
-            }
-            .group-one {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 24px;
-                input {
-                    width: 152px;
-                }
-            }
-            .group-two {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 24px;
             }
         }
     }

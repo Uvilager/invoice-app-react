@@ -1,54 +1,10 @@
-.invoiceHolder {
-  position: fixed;
-  top: 0;
-  left: 90px;
-  width: 100vw;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 900px) {
-  .invoiceHolder {
-    position: absolute;
-    left: 0;
-  }
-}
-
-.invoiceHolder .invoice-wrapper {
-  padding: 56px;
-  background-color: #141625;
-  border-radius: 0px 20px 20px 0px;
-  overflow-y: auto;
-}
-
-.invoiceHolder .invoice-wrapper::-webkit-scrollbar {
-  width: 8px;
-}
-
-.invoiceHolder .invoice-wrapper::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.invoiceHolder .invoice-wrapper::-webkit-scrollbar-thumb {
-  background: #252945;
-  border-radius: 4px;
-}
-
-.invoiceHolder .invoice-wrapper .createOrEdit {
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: -0.5px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.invoiceHolder .invoice-wrapper .button-wrapper {
+.invoiceHolder .invoice-wrapper .button-invoice-wrapper {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-.invoiceHolder .invoice-wrapper .button-wrapper button {
+.invoiceHolder .invoice-wrapper .button-invoice-wrapper button {
   margin-top: 39px;
   font-family: inherit;
   display: -webkit-box;
@@ -68,14 +24,14 @@
   font-weight: 700;
 }
 
-.invoiceHolder .invoice-wrapper .button-wrapper .cancel {
+.invoiceHolder .invoice-wrapper .button-invoice-wrapper .cancel {
   width: 96px;
   color: #dfe3fa;
   background-color: #252945;
   margin-right: 8px;
 }
 
-.invoiceHolder .invoice-wrapper .button-wrapper .saveChanges {
+.invoiceHolder .invoice-wrapper .button-invoice-wrapper .saveChanges {
   width: 138px;
   background-color: #7c5dfa;
   color: #ffffff;
@@ -93,44 +49,5 @@
   letter-spacing: -0.25px;
   font-weight: 700;
   padding: 14px;
-}
-
-.invoiceHolder .invoice-wrapper section p {
-  font-weight: 700;
-  margin-top: 48px;
-  color: #7c5dfa;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: -0.25px;
-}
-
-.invoiceHolder .invoice-wrapper section label {
-  margin-top: 24px;
-  margin-bottom: 10px;
-  color: #dfe3fa;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: -0.25px;
-  font-weight: 500;
-}
-
-.invoiceHolder .invoice-wrapper section .group-one {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
-}
-
-.invoiceHolder .invoice-wrapper section .group-one input {
-  width: 152px;
-}
-
-.invoiceHolder .invoice-wrapper section .group-two {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  gap: 24px;
 }
 /*# sourceMappingURL=form.css.map */

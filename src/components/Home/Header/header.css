@@ -10,16 +10,6 @@
   }
 }
 
-.header .right {
-  margin-left: auto;
-}
-
-@media (max-width: 900px) {
-  .header .right {
-    margin-left: auto;
-  }
-}
-
 .header .left h1 {
   font-size: 32px;
   font-weight: 700;
@@ -41,6 +31,7 @@
 }
 
 .header .right {
+  margin-left: auto;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -49,19 +40,20 @@
           align-items: center;
 }
 
-.header .right .button,
+@media (max-width: 900px) {
+  .header .right {
+    margin-left: auto;
+  }
+}
+
 .header .right .filter {
+  font-family: inherit;
+  outline: none;
+  background-color: transparent;
+  border: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.header .right .button span,
-.header .right .filter span {
-  font-size: 12px;
-}
-
-.header .right .filter {
   position: relative;
   margin-right: 40px;
   cursor: pointer;
@@ -74,31 +66,61 @@
   }
 }
 
-.header .right .filter img {
-  margin-left: 12px;
-  width: 9px;
-  height: 5px;
+.header .right .filter span {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  font-weight: 700;
+  margin-right: 16px;
+  color: #fff;
 }
 
 .header .right .filter .filter-menu {
-  width: 120px;
+  z-index: 1;
+  border-radius: 8px;
+  width: 192px;
+  top: 40px;
+  right: -35px;
+  padding: 24px 24px 8px 24px;
   position: absolute;
-  top: 25px;
   list-style: none;
-  background-color: #1e2139;
+  background-color: #252945;
   -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
           box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .header .right .filter .filter-menu li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 16px;
   cursor: pointer;
   font-size: 12px;
-  padding: 10px 20px;
+  font-weight: 700;
 }
 
-.header .right .filter .filter-menu li:hover {
-  color: #1e2139;
-  background-color: #fff;
+.header .right .filter .filter-menu li:hover .checkbox {
+  border: 1px solid #7c5dfa;
+}
+
+.header .right .filter .filter-menu li .checkbox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 17px;
+  background: #1e2139;
+  border-radius: 2px;
+}
+
+.header .right .filter .filter-menu li .active {
+  background-color: #7c5dfa;
 }
 
 .header .right .new-invoice {

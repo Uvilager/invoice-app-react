@@ -1,4 +1,4 @@
-import * as actionTypes from './invoice-types';
+import * as actionTypes from "./invoice-types";
 
 export const addInvoice = (invoiceID) => {
     return {
@@ -23,16 +23,6 @@ export const updateInvoice = (invoiceID) => {
         type: actionTypes.UPDATE_INVOICE,
         payload: {
             id: invoiceID,
-        },
-    };
-};
-
-export const filterInvoice = (invoiceID, status) => {
-    return {
-        type: actionTypes.FILTER_INVOICE,
-        payload: {
-            id: invoiceID,
-            status,
         },
     };
 };

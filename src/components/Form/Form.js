@@ -1,11 +1,19 @@
 import React from "react";
 
-import "./form.css";
+import "./homeForm.css";
+import { ReactComponent as ArrowLeft } from "../../assets/icon-arrow-left.svg";
 
 function Form({ setInvoiceOpen }) {
     return (
         <div className="invoiceHolder flex">
             <div className="invoice-wrapper">
+                <div
+                    className="mobile-back"
+                    onClick={() => setInvoiceOpen(false)}
+                >
+                    <ArrowLeft />
+                    <span>Go Back</span>
+                </div>
                 <p className="createOrEdit">New Invoice</p>
                 <section>
                     <p>Bill From</p>

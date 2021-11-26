@@ -1,12 +1,23 @@
 import React from "react";
 
 import "./form.css";
+import { ReactComponent as ArrowLeft } from "../../../assets/icon-arrow-left.svg";
 
 function Form({ setInvoiceEdit, invoice }) {
     return (
         <div className="invoiceHolder flex">
             <div className="invoice-wrapper">
-                <p className="createOrEdit">New Invoice</p>
+                <div
+                    className="mobile-back"
+                    onClick={() => setInvoiceEdit(false)}
+                >
+                    <ArrowLeft />
+                    <span>Go Back</span>
+                </div>
+                <p className="createOrEdit">
+                    Edit <span>#</span>
+                    {invoice.id}
+                </p>
                 <section>
                     <p>Bill From</p>
                     <div className="BillFrom">
@@ -116,7 +127,7 @@ function Form({ setInvoiceEdit, invoice }) {
                         </div>
                     </div>
                 </section>
-                <div className="flex button-wrapper">
+                <div className="flex button-invoice-wrapper">
                     <button
                         className="cancel"
                         onClick={() => setInvoiceEdit(false)}

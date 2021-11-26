@@ -34,12 +34,53 @@
   border-radius: 4px;
 }
 
+@media (max-width: 700px) {
+  .invoiceHolder .invoice-wrapper {
+    padding: 24px;
+    width: 100vw;
+  }
+}
+
+.invoiceHolder .invoice-wrapper .mobile-back {
+  display: none;
+}
+
+.invoiceHolder .invoice-wrapper .mobile-back:hover {
+  cursor: pointer;
+}
+
+.invoiceHolder .invoice-wrapper .mobile-back:hover span {
+  color: #888eb0;
+}
+
+@media (max-width: 700px) {
+  .invoiceHolder .invoice-wrapper .mobile-back {
+    display: block;
+    margin-top: 8px;
+  }
+}
+
+.invoiceHolder .invoice-wrapper .mobile-back span {
+  margin-left: 24px;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  font-weight: bold;
+}
+
 .invoiceHolder .invoice-wrapper .createOrEdit {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.5px;
   font-weight: bold;
   color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .invoiceHolder .invoice-wrapper .createOrEdit {
+    margin-top: 24px;
+  }
 }
 
 .invoiceHolder .invoice-wrapper .button-wrapper .right {
@@ -79,6 +120,7 @@
 }
 
 .invoiceHolder .invoice-wrapper section .group-one {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -86,8 +128,27 @@
   gap: 24px;
 }
 
+@media (max-width: 700px) {
+  .invoiceHolder .invoice-wrapper section .group-one {
+    gap: 0px 24px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .invoiceHolder .invoice-wrapper section .group-one div:last-child {
+    grid-column: span 2;
+  }
+}
+
 .invoiceHolder .invoice-wrapper section .group-one input {
   width: 152px;
+}
+
+@media (max-width: 700px) {
+  .invoiceHolder .invoice-wrapper section .group-one input {
+    width: 100%;
+  }
 }
 
 .invoiceHolder .invoice-wrapper section .group-two {
@@ -96,6 +157,10 @@
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 24px;
+}
+
+.invoiceHolder .invoice-wrapper section .group-two div input {
+  width: 100%;
 }
 
 .invoiceHolder .invoice-wrapper button {
@@ -146,4 +211,4 @@
   padding: 10px;
   border: none;
 }
-/*# sourceMappingURL=form.css.map */
+/*# sourceMappingURL=homeForm.css.map */

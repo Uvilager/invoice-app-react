@@ -5,6 +5,7 @@ import { useParams } from "react-router";
 import DeleteModal from "./DeleteModal/DeleteModal";
 import Header from "./Header/Header";
 import Form from "./Form/Form";
+import DateFormat from "../Utilities/DateFormat";
 
 import "./invoice.css";
 
@@ -12,19 +13,9 @@ function Invoice() {
     const params = useParams();
     const invoices = useSelector((state) => state.home.invoices);
     const found = invoices.find((invoice) => invoice.id === params.id);
-    const options = { day: "2-digit", month: "short", year: "numeric" };
 
     const [modalOpen, setModalOpen] = useState(false);
     const [invoiceEdit, setInvoiceEdit] = useState(false);
-
-    function DateFormat(date) {
-        const data = new Date(date);
-        return new Date(
-            `${data.getUTCFullYear()}/${
-                data.getUTCMonth() + 1
-            }/${data.getUTCDate()}`,
-        ).toLocaleString("en-IE", options);
-    }
 
     return (
         <div className="home-container">

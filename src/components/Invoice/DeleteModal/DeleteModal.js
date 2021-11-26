@@ -3,7 +3,6 @@ import reactDom from "react-dom";
 import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import * as invoiceActions from "../../../redux/Invoices/invoice-actions";
-
 import "./delete-modal.css";
 
 function DeleteModal({ setModalOpen, id }) {
