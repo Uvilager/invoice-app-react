@@ -1,0 +1,346 @@
+.home-container {
+  position: relative;
+}
+
+.home-container .invoice-details {
+  margin-top: 24px;
+  background-color: #1e2139;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 54px;
+}
+
+@media (min-width: 600px) {
+  .home-container .invoice-details {
+    padding: 32px;
+  }
+}
+
+@media (min-width: 900px) {
+  .home-container .invoice-details {
+    padding: 48px;
+    width: 730px;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-container .invoice-details {
+    width: auto;
+    margin: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-container .invoice-details .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.home-container .invoice-details .top div {
+  color: #dfe3fa;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.home-container .invoice-details .top .left p:first-child {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.8px;
+  text-align: left;
+}
+
+.home-container .invoice-details .top .left p:nth-child(2) {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.home-container .invoice-details .top .left span {
+  color: #888eb0;
+}
+
+.home-container .invoice-details .top .right {
+  color: #dfe3fa;
+  font-size: 12px;
+  line-height: 15px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  letter-spacing: -0.25px;
+}
+
+@media (max-width: 700px) {
+  .home-container .invoice-details .top .right {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 30px;
+  }
+}
+
+.home-container .invoice-details .top .right p {
+  margin-top: 2px;
+}
+
+.home-container .invoice-details .middle {
+  gap: 100px;
+  margin-top: 21px;
+  color: #dfe3fa;
+  position: relative;
+}
+
+@media (max-width: 700px) {
+  .home-container .invoice-details .middle {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+.home-container .invoice-details .middle h4 {
+  margin-bottom: 12px;
+  color: #dfe3fa;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  text-align: left;
+}
+
+.home-container .invoice-details .middle p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.home-container .invoice-details .middle .bill,
+.home-container .invoice-details .middle .payment {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.home-container .invoice-details .middle .payment h4:nth-child(3) {
+  margin-top: 32px;
+}
+
+.home-container .invoice-details .middle .payment p {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.home-container .invoice-details .middle .bill p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.home-container .invoice-details .middle .bill p:nth-child(3) {
+  margin-top: 8px;
+}
+
+.home-container .invoice-details .middle .bill p {
+  margin-top: 2px;
+  font-size: 12px;
+  color: #dfe3fa;
+  font-size: 12px;
+  line-height: 15px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  letter-spacing: -0.25px;
+}
+
+.home-container .invoice-details .middle .send-to {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-weight: 600;
+}
+
+.home-container .invoice-details .bottom {
+  margin-top: 50px;
+}
+
+.home-container .invoice-details .bottom .billing-items {
+  border-radius: 8px;
+  background-color: #252945;
+}
+
+.home-container .invoice-details .bottom .billing-items .heading {
+  padding: 32px 32px 0px 32px;
+  color: #dfe3fa;
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 700px) {
+  .home-container .invoice-details .bottom .billing-items .heading {
+    display: none;
+  }
+}
+
+.home-container .invoice-details .bottom .billing-items .heading p:first-child {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: left;
+}
+
+.home-container .invoice-details .bottom .billing-items .heading p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+.home-container .invoice-details .bottom .billing-items .item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 32px 32px 32px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .home-container .invoice-details .bottom .billing-items .item {
+    margin-top: 40px;
+  }
+  .home-container .invoice-details .bottom .billing-items .item p:nth-child(4) {
+    display: none;
+  }
+}
+
+.home-container .invoice-details .bottom .billing-items .item div {
+  margin-top: 32px;
+}
+
+.home-container .invoice-details .bottom .billing-items .item div:first-child {
+  margin-top: 0px;
+}
+
+.home-container .invoice-details .bottom .billing-items .item:last-child {
+  margin-bottom: 0;
+}
+
+.home-container .invoice-details .bottom .billing-items .item p:first-child {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: left;
+}
+
+.home-container .invoice-details .bottom .billing-items .item p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+.home-container .invoice-details .bottom .total {
+  color: #fff;
+  padding: 32px;
+  background-color: #0c0e16;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0px 0px 8px 8px;
+  font-weight: 600;
+}
+
+.home-container .invoice-details .bottom .total p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 12px;
+}
+
+.home-container .invoice-details .bottom .total p:nth-child(2) {
+  font-size: 28px;
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .home-container .invoice-details .bottom .total p:nth-child(2) {
+    font-size: 20px;
+  }
+}
+
+.home-container .mobileTools {
+  display: none;
+  width: 100vw;
+  height: 91px;
+  background-color: #1e2139;
+  bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .home-container .mobileTools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.home-container .mobileTools button {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 24px;
+  outline: none;
+  border: none;
+  height: 48px;
+  margin-left: 8px;
+}
+
+.home-container .mobileTools .edit {
+  background-color: #252945;
+  content: "Edit";
+  width: 73px;
+  color: #dfe3fa;
+}
+
+.home-container .mobileTools .edit:hover {
+  background-color: #fff;
+  color: #7e88c3;
+}
+
+.home-container .mobileTools .delete {
+  width: 89px;
+  background-color: #ec5757;
+  color: #fff;
+}
+
+.home-container .mobileTools .delete:hover {
+  background-color: #ff9797;
+}
+
+.home-container .mobileTools .mark {
+  width: 131px;
+  background-color: #7c5dfa;
+  color: #fff;
+}
+
+.home-container .mobileTools .mark:hover {
+  background-color: #9277ff;
+}
+/*# sourceMappingURL=invoice.css.map */

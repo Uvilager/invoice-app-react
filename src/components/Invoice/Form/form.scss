@@ -1,0 +1,46 @@
+.invoiceHolder {
+    .invoice-wrapper {
+        .button-invoice-wrapper {
+            justify-content: flex-end;
+            button {
+                margin-top: 39px;
+                font-family: inherit;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 48px;
+                border-radius: 50%;
+                border: none;
+                outline: none;
+                border-radius: 24px;
+                font-weight: 700;
+            }
+            .cancel {
+                width: 96px;
+                color: #dfe3fa;
+                background-color: #252945;
+                margin-right: 8px;
+            }
+            .saveChanges {
+                width: 138px;
+                background-color: #7c5dfa;
+                color: #ffffff;
+            }
+        }
+        section {
+            input {
+                height: 48px;
+                background-color: #1e2139;
+                outline: none;
+                border-radius: 4px;
+                border: 1px solid #252945;
+                color: #fff;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: -0.25px;
+                font-weight: 700;
+                padding: 14px;
+            }
+        }
+    }
+}

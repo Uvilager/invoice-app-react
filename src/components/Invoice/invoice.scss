@@ -1,0 +1,247 @@
+.home-container {
+    // padding: 0px 40px 40px 40px;
+    position: relative;
+    .invoice-details {
+        margin-top: 24px;
+        background-color: #1e2139;
+        border-radius: 8px;
+        padding: 24px;
+        margin-bottom: 54px;
+        @media (min-width: 600px) {
+            padding: 32px;
+        }
+        @media (min-width: 900px) {
+            padding: 48px;
+            width: 730px;
+        }
+        @media (max-width: 700px) {
+            width: auto;
+            margin: 24px;
+        }
+        .top {
+            @media (max-width: 700px) {
+                flex-direction: column;
+            }
+            div {
+                color: #dfe3fa;
+                flex: 1;
+            }
+            .left {
+                p:first-child {
+                    color: #fff;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: -0.8px;
+                    text-align: left;
+                }
+                p:nth-child(2) {
+                    font-size: 12px;
+                    margin-top: 8px;
+                }
+                span {
+                    color: #888eb0;
+                }
+            }
+            .right {
+                color: #dfe3fa;
+                font-size: 12px;
+                line-height: 15px;
+                align-items: flex-end;
+                letter-spacing: -0.25px;
+                @media (max-width: 700px) {
+                    align-items: flex-start;
+                    margin-top: 30px;
+                }
+                p {
+                    margin-top: 2px;
+                }
+            }
+        }
+        .middle {
+            gap: 100px;
+            margin-top: 21px;
+            color: #dfe3fa;
+            position: relative;
+            @media (max-width: 700px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+            h4 {
+                margin-bottom: 12px;
+                color: #dfe3fa;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 15px;
+                letter-spacing: -0.25px;
+                text-align: left;
+            }
+            p {
+                font-size: 16px;
+                color: #fff;
+            }
+            .bill,
+            .payment {
+                flex: 1;
+            }
+            .payment {
+                h4:nth-child(3) {
+                    margin-top: 32px;
+                }
+                p {
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+            }
+            .bill {
+                p:nth-child(2) {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+                p:nth-child(3) {
+                    margin-top: 8px;
+                }
+                p {
+                    margin-top: 2px;
+                    font-size: 12px;
+                    color: #dfe3fa;
+                    font-size: 12px;
+                    line-height: 15px;
+                    align-items: flex-end;
+                    letter-spacing: -0.25px;
+                }
+            }
+            .send-to {
+                flex: 2;
+                font-weight: 600;
+            }
+        }
+        .bottom {
+            margin-top: 50px;
+            .billing-items {
+                border-radius: 8px;
+                background-color: #252945;
+                .heading {
+                    padding: 32px 32px 0px 32px;
+                    color: #dfe3fa;
+                    font-size: 12px;
+                    margin-bottom: 32px;
+                    @media (max-width: 700px) {
+                        display: none;
+                    }
+                    p:first-child {
+                        flex: 2;
+                        text-align: left;
+                    }
+                    p {
+                        flex: 1;
+                        text-align: right;
+                    }
+                }
+                .item {
+                    flex-direction: column;
+                    padding: 0px 32px 32px 32px;
+                    margin-bottom: 8px;
+                    font-size: 13px;
+                    color: #fff;
+                    @media (max-width: 700px) {
+                        margin-top: 40px;
+                        p:nth-child(4) {
+                            display: none;
+                        }
+                    }
+                    div {
+                        margin-top: 32px;
+                    }
+                    div:first-child {
+                        margin-top: 0px;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    p:first-child {
+                        flex: 2;
+                        text-align: left;
+                    }
+                    p {
+                        flex: 1;
+                        text-align: right;
+                    }
+                }
+            }
+            .total {
+                color: #fff;
+                padding: 32px;
+                background-color: #0c0e16;
+                align-items: center;
+                border-radius: 0px 0px 8px 8px;
+                font-weight: 600;
+                p {
+                    flex: 1;
+                    font-size: 12px;
+                }
+                p:nth-child(2) {
+                    font-size: 28px;
+                    text-align: right;
+                    @media (max-width: 700px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .mobileTools {
+        display: none;
+        width: 100vw;
+        height: 91px;
+        background-color: #1e2139;
+        bottom: 0;
+        @media (max-width: 700px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            font-weight: 700;
+            color: #fff;
+            border-radius: 24px;
+            outline: none;
+            border: none;
+            height: 48px;
+            margin-left: 8px;
+        }
+        .edit {
+            background-color: #252945;
+            content: "Edit";
+            width: 73px;
+            color: #dfe3fa;
+            &:hover {
+                background-color: #fff;
+                color: #7e88c3;
+            }
+        }
+        .delete {
+            width: 89px;
+            background-color: #ec5757;
+            color: #fff;
+            &:hover {
+                background-color: #ff9797;
+            }
+        }
+        .mark {
+            width: 131px;
+            background-color: #7c5dfa;
+            color: #fff;
+            &:hover {
+                background-color: #9277ff;
+            }
+        }
+    }
+}

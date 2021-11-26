@@ -1,0 +1,184 @@
+.wrapper {
+  margin-top: 64px;
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    width: auto;
+    margin: 0 24px;
+  }
+}
+
+.wrapper .hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.wrapper .hover:hover span {
+  color: #888eb0;
+}
+
+.wrapper .hover span {
+  margin-left: 28px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.wrapper .invoice-header {
+  background-color: #1e2139;
+  border-radius: 8px;
+  margin-top: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 32px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 500;
+}
+
+.wrapper .invoice-header .left {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 700px) {
+  .wrapper .invoice-header .left {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.wrapper .invoice-header .left span {
+  color: #dfe3fa;
+  margin-right: 16px;
+}
+
+.wrapper .invoice-header .left .status-button {
+  border-radius: 6px;
+  width: 104px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+}
+
+.wrapper .invoice-header .left .status-button .status-ball {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.wrapper .invoice-header .left .status-button span {
+  margin-right: 0;
+  margin-left: 8px;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+}
+
+.wrapper .invoice-header .left .pending {
+  background-color: rgba(255, 143, 0, 0.06);
+}
+
+.wrapper .invoice-header .left .pending .status-ball {
+  background-color: #ff8f00;
+}
+
+.wrapper .invoice-header .left .pending span {
+  color: #ff8f00;
+}
+
+.wrapper .invoice-header .left .paid {
+  background-color: rgba(51, 214, 159, 0.06);
+}
+
+.wrapper .invoice-header .left .paid .status-ball {
+  background-color: #33d69f;
+}
+
+.wrapper .invoice-header .left .paid span {
+  color: #33d69f;
+}
+
+.wrapper .invoice-header .left .draft {
+  background-color: rgba(223, 227, 250, 0.06);
+}
+
+.wrapper .invoice-header .left .draft .status-ball {
+  background-color: #dfe3fa;
+}
+
+.wrapper .invoice-header .left .draft span {
+  color: #dfe3fa;
+}
+
+.wrapper .invoice-header .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 700px) {
+  .wrapper .invoice-header .right {
+    display: none;
+  }
+}
+
+.wrapper .invoice-header .right button {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 24px;
+  outline: none;
+  border: none;
+  height: 48px;
+  margin-left: 8px;
+}
+
+.wrapper .invoice-header .right .edit {
+  background-color: #252945;
+  content: "Edit";
+  width: 73px;
+  color: #dfe3fa;
+}
+
+.wrapper .invoice-header .right .edit:hover {
+  background-color: #fff;
+  color: #7e88c3;
+}
+
+.wrapper .invoice-header .right .delete {
+  width: 89px;
+  background-color: #ec5757;
+  color: #fff;
+}
+
+.wrapper .invoice-header .right .delete:hover {
+  background-color: #ff9797;
+}
+
+.wrapper .invoice-header .right .mark {
+  width: 131px;
+  background-color: #7c5dfa;
+  color: #fff;
+}
+
+.wrapper .invoice-header .right .mark:hover {
+  background-color: #9277ff;
+}
+/*# sourceMappingURL=invoiceHeader.css.map */

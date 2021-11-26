@@ -1,0 +1,136 @@
+.wrapper {
+    margin-top: 64px;
+    @media (max-width: 700px) {
+        width: auto;
+        margin: 0 24px;
+    }
+    .hover {
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+            span {
+                color: #888eb0;
+            }
+        }
+        span {
+            margin-left: 28px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 12px;
+        }
+    }
+    .invoice-header {
+        background-color: #1e2139;
+        border-radius: 8px;
+        margin-top: 32px;
+        align-items: center;
+        padding: 24px 32px;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 500;
+        .left {
+            align-items: center;
+            @media (max-width: 700px) {
+                width: 100%;
+                justify-content: space-between;
+            }
+            span {
+                color: #dfe3fa;
+                margin-right: 16px;
+            }
+            .status-button {
+                border-radius: 6px;
+                width: 104px;
+                height: 40px;
+                justify-content: center;
+                align-items: center;
+                justify-content: center;
+                .status-ball {
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                }
+                span {
+                    margin-right: 0;
+                    margin-left: 8px;
+                    text-transform: capitalize;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 15px;
+                    letter-spacing: -0.25px;
+                }
+            }
+            .pending {
+                background-color: rgba(255, 143, 0, 0.06);
+                .status-ball {
+                    background-color: #ff8f00;
+                }
+                span {
+                    color: #ff8f00;
+                }
+            }
+            .paid {
+                background-color: rgba(51, 214, 159, 0.06);
+                .status-ball {
+                    background-color: #33d69f;
+                }
+                span {
+                    color: #33d69f;
+                }
+            }
+            .draft {
+                background-color: rgba(223, 227, 250, 0.06);
+                .status-ball {
+                    background-color: #dfe3fa;
+                }
+                span {
+                    color: #dfe3fa;
+                }
+            }
+        }
+        .right {
+            flex: 1;
+            justify-content: flex-end;
+            @media (max-width: 700px) {
+                display: none;
+            }
+            button {
+                font-family: inherit;
+                cursor: pointer;
+                font-weight: 700;
+                color: #fff;
+                border-radius: 24px;
+                outline: none;
+                border: none;
+                height: 48px;
+                margin-left: 8px;
+            }
+            .edit {
+                background-color: #252945;
+                content: "Edit";
+                width: 73px;
+                color: #dfe3fa;
+                &:hover {
+                    background-color: #fff;
+                    color: #7e88c3;
+                }
+            }
+            .delete {
+                width: 89px;
+                background-color: #ec5757;
+                color: #fff;
+                &:hover {
+                    background-color: #ff9797;
+                }
+            }
+            .mark {
+                width: 131px;
+                background-color: #7c5dfa;
+                color: #fff;
+                &:hover {
+                    background-color: #9277ff;
+                }
+            }
+        }
+    }
+}

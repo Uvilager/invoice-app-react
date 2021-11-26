@@ -1,0 +1,132 @@
+.invoice {
+    position: relative;
+    white-space: nowrap;
+    max-width: 720px;
+    text-decoration: none;
+    cursor: pointer;
+    gap: 16px;
+    margin-bottom: 16px;
+    color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    background-color: #1e2139;
+    align-items: center;
+    box-sizing: content-box;
+    justify-content: space-between;
+    @media (max-width: 900px) {
+        width: auto;
+    }
+    @media (max-width: 700px) {
+        flex-direction: column;
+        max-width: 330px;
+    }
+    &:hover {
+        outline: 1px solid #7c5dfa;
+    }
+    span,
+    p {
+        font-size: 12px;
+        letter-spacing: -0.25px;
+        line-height: 15px;
+    }
+    .left {
+        align-items: center;
+        flex-basis: 60%;
+        gap: 43px;
+        @media (max-width: 700px) {
+            width: 100%;
+            justify-content: space-between;
+        }
+        span {
+            font-weight: 500;
+        }
+        .due-date {
+            color: #dfe3fa;
+            @media (max-width: 700px) {
+                bottom: 40%;
+                left: 25px;
+                position: absolute;
+            }
+        }
+        .tracking-number {
+            text-transform: uppercase;
+            font-weight: 700;
+            span {
+                color: #7e88c3;
+            }
+        }
+    }
+    .right {
+        gap: 16px;
+        flex-basis: 40%;
+        align-items: center;
+        @media (max-width: 700px) {
+            width: 100%;
+        }
+        .icon {
+            @media (max-width: 700px) {
+                display: none;
+            }
+        }
+        .price {
+            flex: 1;
+            font-size: 16px;
+            font-weight: 600px;
+            @media (max-width: 700px) {
+                align-self: flex-end;
+            }
+        }
+        .status-button {
+            border-radius: 6px;
+            width: 104px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: 700px) {
+                justify-self: flex-end;
+            }
+            .status-ball {
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+            }
+            span {
+                margin-right: 0;
+                margin-left: 8px;
+                text-transform: capitalize;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 15px;
+                letter-spacing: -0.25px;
+            }
+        }
+        .pending {
+            background-color: rgba(255, 143, 0, 0.06);
+            .status-ball {
+                background-color: #ff8f00;
+            }
+            span {
+                color: #ff8f00;
+            }
+        }
+        .paid {
+            background-color: rgba(51, 214, 159, 0.06);
+            .status-ball {
+                background-color: #33d69f;
+            }
+            span {
+                color: #33d69f;
+            }
+        }
+        .draft {
+            background-color: rgba(223, 227, 250, 0.06);
+            .status-ball {
+                background-color: #dfe3fa;
+            }
+            span {
+                color: #dfe3fa;
+            }
+        }
+    }
+}
